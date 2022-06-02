@@ -600,18 +600,7 @@
 
 <div class="markdown-body">
       <h1>
-    Best Practices using MobiledgeX Client SDKs <input type="text" id="shortlink" value="http://dev-v3.test/t/3af1e24f" style="display: none;">
-    <div class="copyTooltip">
-      <a href="" id="copyshortlink">
-        <span class="tooltiptext" id="myTooltip">Copy link to clipboard</span>
-        <svg fill="rgba(39,60,76,.5)" width="15pt" height="15pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g>
-            <path d="m91.762 8.2422c-5.3164-5.3164-12.379-8.2422-19.887-8.2422s-14.57 2.9258-19.883 8.2422c0 0-17.742 17.734-18.758 18.742-5.293 5.3047-8.2188 12.379-8.2305 19.938 0.011719 7.5 2.9375 14.547 8.2383 19.848l2.2891 2.2891c0.60938 0.60938 1.4102 0.91406 2.2109 0.91406 0.80078 0 1.6016-0.30469 2.2109-0.91406l4.418-4.418c1.2227-1.2227 1.2227-3.1953 0-4.418l-2.2891-2.2891c-5.9922-5.9961-6.0742-15.824-0.17969-21.922 0.18359-0.1875 18.934-18.93 18.934-18.93 2.9414-2.957 6.8672-4.582 11.043-4.582 4.168 0 8.0898 1.625 11.039 4.5703 0.003906 0 0.003906 0.007813 0.003906 0.007813 6.1016 6.1094 6.1016 15.992 0.003906 22.094l-0.96875 0.96484c1.5195 4.0586 2.4141 8.4102 2.418 12.988 0 0.83203-0.11328 1.6289-0.16406 2.4414l7.5547-7.5547c10.984-10.988 10.977-28.801-0.003906-39.77z" />
-            <path d="m8.2383 91.758c5.3164 5.3164 12.379 8.2422 19.887 8.2422s14.57-2.9258 19.883-8.2422c0 0 17.742-17.734 18.758-18.742 5.293-5.3047 8.2188-12.379 8.2305-19.938-0.011719-7.5-2.9375-14.547-8.2383-19.848l-2.2891-2.2891c-0.60938-0.60938-1.4102-0.91406-2.2109-0.91406-0.80078 0-1.6016 0.30469-2.2109 0.91406l-4.418 4.418c-1.2227 1.2227-1.2227 3.1953 0 4.418l2.2891 2.2891c5.9922 5.9961 6.0742 15.824 0.17969 21.922-0.18359 0.1875-18.934 18.93-18.934 18.93-2.9414 2.957-6.8672 4.582-11.043 4.582-4.168 0-8.0898-1.625-11.039-4.5703l-0.003906-0.007813c-6.1016-6.1094-6.1016-15.992-0.003906-22.094l0.96875-0.96484c-1.5195-4.0586-2.4141-8.4102-2.418-12.988 0-0.83203 0.11328-1.6289 0.16406-2.4414l-7.5547 7.5547c-10.984 10.988-10.977 28.801 0.003906 39.77z" />
-          </g>
-        </svg>
-      </a>
-    </div>
+    Best Practices using MobiledgeX Client SDKs 
   </h1>
     
       <p>In this guide, the best practices for utilizing MobiledgeX’s SDKs are explained. Before reading this guide, it is recommended that you read <a href="/sdks/overview">Connecting Client Application to Deployed Cloudlets</a>, which details how to use our SDKs and APIs. Specifically, this guide will cover:  </p><ul><li><p>When and how often <code>FindCloudlet</code> should be used within your application’s deployment  </p></li><li><p>When should your application use <code>VerifyLocation</code></p></li><li><p>What is the Performance Metrics API, and when is it used  </p></li><li><p>WiFi Use Cases  </p></li></ul><h2 id='sdk-basics--'><a class='anchor' aria-hidden='true' href='#sdk-basics--'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>SDK Basics  </h2><p>The process for connecting to a cloudlet will require your application to call two functions: <code>RegisterClient</code> and <code>FindCloudlet</code>. Calling these functions provides the URI of an application instance from a cloudlet that will best serve your client. The best-returned application instance is determined by two factors: <em>the user’s current location</em> and <em>the network connection</em>. Once your client application receives the URI, it may begin communicating with your deployed backend server. Please see the diagram below.  </p>

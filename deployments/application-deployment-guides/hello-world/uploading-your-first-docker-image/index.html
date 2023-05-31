@@ -10,24 +10,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Create and Upload Your First Docker Image | MobiledgeX Developers</title>
-<meta name="description" content="Create a Hello World Docker Image using a NGINX Webserver and Upload that Docker Image to MobiledgeX" />
+  <title>Create and Upload Your First Docker Image | EdgeXR Developers</title>
+<meta name="description" content="Create a Hello World Docker Image using a NGINX Webserver and Upload that Docker Image to EdgeXR" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Create and Upload Your First Docker Image" />
-<meta property="og:description" content="Create a Hello World Docker Image using a NGINX Webserver and Upload that Docker Image to MobiledgeX" />
+<meta property="og:description" content="Create a Hello World Docker Image using a NGINX Webserver and Upload that Docker Image to EdgeXR" />
 <meta property="og:url" content="http://dev-v3.test/deployments/application-deployment-guides/hello-world/uploading-your-first-docker-image" />
-<meta property="og:site_name" content="MobiledgeX Developers" />
+<meta property="og:site_name" content="EdgeXR Developers" />
 <meta property="og:locale" content="en_US" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@mobiledgex" />
-<meta name="twitter:title" content="Create and Upload Your First Docker Image" />
-<meta name="twitter:description" content="Create a Hello World Docker Image using a NGINX Webserver and Upload that Docker Image to MobiledgeX" />
 <meta property="og:image" content="http://dev-v3.test/img/containers/assets/social-developers.jpg/b1d19eb47e0ea441f7510b1a27b43974.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="1200" />
 <meta property="og:image:alt" content="" />
-<meta name="twitter:image" content="http://dev-v3.test/img/containers/assets/social-developers.jpg/b1d19eb47e0ea441f7510b1a27b43974.jpg" />
-<meta name="twitter:image:alt" content="" />
 <link href="http://dev-v3.test/" rel="home" />
 <link href="http://dev-v3.test/deployments/application-deployment-guides/hello-world/uploading-your-first-docker-image" rel="canonical" />
 <link type="text/plain" rel="author" href="http://dev-v3.test/humans.txt" />
@@ -52,16 +46,11 @@
   <header class="duik-header">
   <nav class="properties navbar fixed-top d-none d-md-flex">
     <ul>
-      <li><a href="https://mobiledgex.com">MobiledgeX Home</a></li>
-      <li><a href="https://mobiledgex.com/product">Product</a></li>
-      <li><a href="https://mobiledgex.com/use-cases">Use Cases</a></li>
-      <li><a href="https://mobiledgex.com/about">About</a></li>
-      <li><a href="https://mobiledgex.com/blog">Blog</a></li>
     </ul>
   </nav>
   <nav class="navbar navbar-dark fixed-top bg-terrain flex-nowrap p-0 main-nav">
     <a class="navbar-brand col-md-3 col-xl-2 mr-0 py-3" href="/">
-      <img src="/img/logo-white.svg?v=1592862229" alt="MobiledgeX Developers" />
+      <img src="/img/logo-white.svg?v=1592862229" alt="EdgeXR Developers" />
     </a>
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
       <li class="nav-item ml-lg-6 mb-2 mb-lg-0 d-none d-lg-inline">
@@ -118,22 +107,22 @@
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/product" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item">
-            <a href="/product/overview" class="duik-sidebar__link">What is MobiledgeX?</a>
+            <a href="/product/overview" class="duik-sidebar__link">What is EdgeXR?</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="/product/mobiledgex-edge-cloud" class="duik-sidebar__link">MobiledgeX Edge-Cloud Console</a>
+            <a href="/product/mobiledgex-edge-cloud" class="duik-sidebar__link">EdgeXR Edge-Cloud Console</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="/product/mobiledgex-sdk" class="duik-sidebar__link">MobiledgeX Client SDKs</a>
+            <a href="/product/mobiledgex-sdk" class="duik-sidebar__link">EdgeXR Client SDKs</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="/product/mobiledgex-edge-services" class="duik-sidebar__link">MobiledgeX Edge Services</a>
+            <a href="/product/mobiledgex-edge-services" class="duik-sidebar__link">EdgeXR Edge Services</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="/product/mobiledgex-community" class="duik-sidebar__link">MobiledgeX Developer Community</a>
+            <a href="/product/mobiledgex-community" class="duik-sidebar__link">EdgeXR Developer Community</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="/product/mobiledgex-demo" class="duik-sidebar__link">MobiledgeX Demo App</a>
+            <a href="/product/mobiledgex-demo" class="duik-sidebar__link">EdgeXR Demo App</a>
           </li>
                 
               </ul>
@@ -188,7 +177,7 @@
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/deployments/application-deployment-guides" class="duik-sidebar__link">Overview</a></li>
                                   <li class="subs depth-3 duik-sidebar__item active">
-            <a class="duik-sidebar__link">MobiledgeX Hello World</a>
+            <a class="duik-sidebar__link">EdgeXR Hello World</a>
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/deployments/application-deployment-guides/hello-world" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item active current">
@@ -347,11 +336,11 @@
               </ul>
           </li>
                                   <li class="subs depth-1 duik-sidebar__item">
-            <a class="duik-sidebar__link">MobiledgeX Edge Services</a>
+            <a class="duik-sidebar__link">EdgeXR Edge Services</a>
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/services" class="duik-sidebar__link">Overview</a></li>
                                   <li class="subs depth-2 duik-sidebar__item">
-            <a class="duik-sidebar__link">MobiledgeX Computer Vision</a>
+            <a class="duik-sidebar__link">EdgeXR Computer Vision</a>
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/services/computer-vision" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item">
@@ -367,7 +356,7 @@
               </ul>
           </li>
                                   <li class="subs depth-2 duik-sidebar__item">
-            <a class="duik-sidebar__link">MobiledgeX Multiplayer Service</a>
+            <a class="duik-sidebar__link">EdgeXR Multiplayer Service</a>
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/services/unity-edgemultiplay" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item">
@@ -472,7 +461,7 @@
               </ul>
           </li>
                                   <li class="subs depth-1 duik-sidebar__item">
-            <a class="duik-sidebar__link">MobiledgeX Release Notes</a>
+            <a class="duik-sidebar__link">EdgeXR Release Notes</a>
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/release-notes" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item">
@@ -502,10 +491,10 @@
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/apis" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item">
-            <a href="https://api.mobiledgex.net" class="duik-sidebar__link">Device APIs</a>
+            <a href="https://api.edgexr.org" class="duik-sidebar__link">Device APIs</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="https://api.mobiledgex.net/mc" class="duik-sidebar__link">Edge Orchestration APIs</a>
+            <a href="https://api.edgexr.org/mc" class="duik-sidebar__link">Edge Orchestration APIs</a>
           </li>
                                   <li class="duik-sidebar__item">
             <a href="https://mobiledgex.github.io/edge-cloud-sdk-unity" class="duik-sidebar__link">Unity SDK Manual</a>
@@ -517,7 +506,7 @@
             <a href="https://mobiledgex.github.io/MatchingEngineSDK/rest/index.html" class="duik-sidebar__link">Swift SDK Manual</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="https://api.mobiledgex.net/swagger/mexdemo/edge-cloud-sdk-csharp/html/index.html" class="duik-sidebar__link">C# SDK Manual</a>
+            <a href="https://api.edgexr.org/swagger/mexdemo/edge-cloud-sdk-csharp/html/index.html" class="duik-sidebar__link">C# SDK Manual</a>
           </li>
                 
               </ul>
@@ -534,12 +523,12 @@
       </ul>
       <hr class="d-block d-md-none">
       <ul class="duik-sidebar__nav d-block d-md-none">
-        <li class="duik-sidebar__item"><a href="https://mobiledgex.com" class="duik-sidebar__link">MobiledgeX Home</a></li>
-        <li class="duik-sidebar__item"><a href="https://mobiledgex.com/product" class="duik-sidebar__link">Product</a></li>
-        <li class="duik-sidebar__item"><a href="https://mobiledgex.com/use-cases" class="duik-sidebar__link">Use Cases</a></li>
-        <li class="duik-sidebar__item"><a href="https://mobiledgex.com/about" class="duik-sidebar__link">About</a></li>
-        <li class="duik-sidebar__item"><a href="https://mobiledgex.com/blog" class="duik-sidebar__link">Blog</a></li>
-        <li class="duik-sidebar__item"><a href="https://operators.mobiledgex.com" class="duik-sidebar__link">Operators</a></li>
+        <li class="duik-sidebar__item"><a href="https://edgexr.net" class="duik-sidebar__link">EdgeXR Home</a></li>
+        <li class="duik-sidebar__item"><a href="https://edgexr.net/services" class="duik-sidebar__link">Product</a></li>
+        <li class="duik-sidebar__item"><a href="https://edgexr.net/services" class="duik-sidebar__link">Services</a></li>
+        <li class="duik-sidebar__item"><a href="https://edgexr.net/about" class="duik-sidebar__link">About</a></li>
+        <li class="duik-sidebar__item"><a href="https://edgexr.net/open-source" class="duik-sidebar__link">Open Source</a></li>
+        <li class="duik-sidebar__item"><a href="https://operators.edgexr.org" class="duik-sidebar__link">Operators</a></li>
       </ul>
     </div>
   </div>
@@ -600,17 +589,28 @@
 
 <div class="markdown-body">
       <h1>
-    Create and Upload Your First Docker Image to MobiledgeX 
+    Create and Upload Your First Docker Image to EdgeXR <input type="text" id="shortlink" value="http://dev-v3.test/t/b3b1509c" style="display: none;">
+    <div class="copyTooltip">
+      <a href="" id="copyshortlink">
+        <span class="tooltiptext" id="myTooltip">Copy link to clipboard</span>
+        <svg fill="rgba(39,60,76,.5)" width="15pt" height="15pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="m91.762 8.2422c-5.3164-5.3164-12.379-8.2422-19.887-8.2422s-14.57 2.9258-19.883 8.2422c0 0-17.742 17.734-18.758 18.742-5.293 5.3047-8.2188 12.379-8.2305 19.938 0.011719 7.5 2.9375 14.547 8.2383 19.848l2.2891 2.2891c0.60938 0.60938 1.4102 0.91406 2.2109 0.91406 0.80078 0 1.6016-0.30469 2.2109-0.91406l4.418-4.418c1.2227-1.2227 1.2227-3.1953 0-4.418l-2.2891-2.2891c-5.9922-5.9961-6.0742-15.824-0.17969-21.922 0.18359-0.1875 18.934-18.93 18.934-18.93 2.9414-2.957 6.8672-4.582 11.043-4.582 4.168 0 8.0898 1.625 11.039 4.5703 0.003906 0 0.003906 0.007813 0.003906 0.007813 6.1016 6.1094 6.1016 15.992 0.003906 22.094l-0.96875 0.96484c1.5195 4.0586 2.4141 8.4102 2.418 12.988 0 0.83203-0.11328 1.6289-0.16406 2.4414l7.5547-7.5547c10.984-10.988 10.977-28.801-0.003906-39.77z" />
+            <path d="m8.2383 91.758c5.3164 5.3164 12.379 8.2422 19.887 8.2422s14.57-2.9258 19.883-8.2422c0 0 17.742-17.734 18.758-18.742 5.293-5.3047 8.2188-12.379 8.2305-19.938-0.011719-7.5-2.9375-14.547-8.2383-19.848l-2.2891-2.2891c-0.60938-0.60938-1.4102-0.91406-2.2109-0.91406-0.80078 0-1.6016 0.30469-2.2109 0.91406l-4.418 4.418c-1.2227 1.2227-1.2227 3.1953 0 4.418l2.2891 2.2891c5.9922 5.9961 6.0742 15.824 0.17969 21.922-0.18359 0.1875-18.934 18.93-18.934 18.93-2.9414 2.957-6.8672 4.582-11.043 4.582-4.168 0-8.0898-1.625-11.039-4.5703l-0.003906-0.007813c-6.1016-6.1094-6.1016-15.992-0.003906-22.094l0.96875-0.96484c-1.5195-4.0586-2.4141-8.4102-2.418-12.988 0-0.83203 0.11328-1.6289 0.16406-2.4414l-7.5547 7.5547c-10.984 10.988-10.977 28.801 0.003906 39.77z" />
+          </g>
+        </svg>
+      </a>
+    </div>
   </h1>
     
-      <p><strong>Last Modified:</strong> 11/15/21</p><p>In this tutorial, we will be creating a very simple web server using Docker and NGINX, run it locally and then upload that Docker image of the server to MobiledgeX.</p><p>By the end of this guide, you should be able to run the Docker Image locally and see a Hello World web page that looks exactly like this: <a href="https://reservable10.hamburg-main.tdg.mobiledgex.net:80/">https://reservable10.hamburg-main.tdg.mobiledgex.net:80/</a></p>
+      <p><strong>Last Modified:</strong> 11/15/21</p><p>In this tutorial, we will be creating a very simple web server using Docker and NGINX, run it locally and then upload that Docker image of the server to EdgeXR.</p><p>By the end of this guide, you should be able to run the Docker Image locally and see a Hello World web page that looks exactly like this: <a href="https://reservable10.hamburg-main-tdg.eu.app.tdg.edgexr.org:80/">https://reservable10.hamburg-main-tdg.eu.app.tdg.edgexr.org:80/</a></p>
 
         <div class="embed-responsive embed-responsive-16by9">
     <!-- Youtube and Video -->
     <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/9pIZ8y6rklA" ...></iframe>
   </div>
 
-      <h2 id='what-is-docker'><a class='anchor' aria-hidden='true' href='#what-is-docker'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a><strong>What Is Docker?</strong></h2><p>Briefly, <a href="https://www.docker.com/"><strong>Docker</strong></a> is a set of tools that was released in 2013. Docker allows you to easily leverage other applications as images (like we will be doing here with <a href="https://hub.docker.com/_/nginx"><strong>NGINX</strong></a>) and build off them to create your own server-side applications. Your applications can then be built into Docker images by defining instructions needed to setup your applications in a <a href="https://docs.docker.com/engine/reference/builder/"><strong>Dockerfile</strong></a>. You can then use the Docker Engine to run any Docker image as a <a href="https://www.docker.com/resources/what-container"><strong>Docker Container</strong></a> of your application.</p><p>Another way to frame this is that a Docker Image is the compiled version of your application and a Docker Container is a running instance of the Image.</p><h3 id='this-provides-two-key-advantages'><a class='anchor' aria-hidden='true' href='#this-provides-two-key-advantages'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>This provides two key advantages:</h3><ol start="1"><li><p>Applications can be moved from one Docker environment to another and consistently work.</p></li><li><p>Applications can easily be scaled up and scaled down to meet real time user demands.</p></li></ol><p>In the context of MobiledgeX, this is extremely valuable as it allows your application to easily run and scale across various mobile operator edge infrastructure around the world.</p><p>While not the only way to deploy server applications on MobiledgeX, Docker is a straightforward way to work with MobiledgeX and the recommended approach for developers if possible in production use cases.</p><h2 id='step-0-install-docker-desktop'><a class='anchor' aria-hidden='true' href='#step-0-install-docker-desktop'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>Step 0: Install Docker Desktop</h2><p>If you have not already done so, please install <a href="https://www.docker.com/products/docker-desktop"><strong>Docker Desktop</strong></a> from the <a href="https://www.docker.com/get-started"><strong>Docker Getting Started</strong></a> page. This will install a suite of tools such as Docker, Docker-Compose, a dashboard to monitor the images and containers on your computer, as well as other advanced tools.</p><p>For developers using Windows, MobiledgeX at this time <strong>only supports Linux based Docker images</strong>. Please refer to this documentation that describes how to setup Windows to run Linux based containers: <a href="https://docs.docker.com/docker-for-windows/"><strong>https://docs.docker.com/docker-for-windows/</strong></a></p><p>Once that has been installed, you should be able to open up a terminal and run <code>docker -v</code>, which will print out the version of Docker you just installed.</p><h2 id='step-1-running-your-first-docker-web-server'><a class='anchor' aria-hidden='true' href='#step-1-running-your-first-docker-web-server'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>Step 1: Running Your First Docker Web Server</h2><p>Let’s start by getting the base version of <a href="https://hub.docker.com/_/nginx"><strong>NGINX</strong></a> up and running. In a command line terminal, type the command:</p><p><code>docker container run --name nginx -p 8080:80 nginx:latest</code></p><p>This command will be running a few different tasks, which might take a minute to complete. Once you see “ready for start up” printed in the terminal, head over to a web browser and type the address “localhost:8080”</p>
+      <h2 id='what-is-docker'><a class='anchor' aria-hidden='true' href='#what-is-docker'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a><strong>What Is Docker?</strong></h2><p>Briefly, <a href="https://www.docker.com/"><strong>Docker</strong></a> is a set of tools that was released in 2013. Docker allows you to easily leverage other applications as images (like we will be doing here with <a href="https://hub.docker.com/_/nginx"><strong>NGINX</strong></a>) and build off them to create your own server-side applications. Your applications can then be built into Docker images by defining instructions needed to setup your applications in a <a href="https://docs.docker.com/engine/reference/builder/"><strong>Dockerfile</strong></a>. You can then use the Docker Engine to run any Docker image as a <a href="https://www.docker.com/resources/what-container"><strong>Docker Container</strong></a> of your application.</p><p>Another way to frame this is that a Docker Image is the compiled version of your application and a Docker Container is a running instance of the Image.</p><h3 id='this-provides-two-key-advantages'><a class='anchor' aria-hidden='true' href='#this-provides-two-key-advantages'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>This provides two key advantages:</h3><ol start="1"><li><p>Applications can be moved from one Docker environment to another and consistently work.</p></li><li><p>Applications can easily be scaled up and scaled down to meet real time user demands.</p></li></ol><p>In the context of EdgeXR, this is extremely valuable as it allows your application to easily run and scale across various mobile operator edge infrastructure around the world.</p><p>While not the only way to deploy server applications on EdgeXR, Docker is a straightforward way to work with EdgeXR and the recommended approach for developers if possible in production use cases.</p><h2 id='step-0-install-docker-desktop'><a class='anchor' aria-hidden='true' href='#step-0-install-docker-desktop'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>Step 0: Install Docker Desktop</h2><p>If you have not already done so, please install <a href="https://www.docker.com/products/docker-desktop"><strong>Docker Desktop</strong></a> from the <a href="https://www.docker.com/get-started"><strong>Docker Getting Started</strong></a> page. This will install a suite of tools such as Docker, Docker-Compose, a dashboard to monitor the images and containers on your computer, as well as other advanced tools.</p><p>For developers using Windows, EdgeXR at this time <strong>only supports Linux based Docker images</strong>. Please refer to this documentation that describes how to setup Windows to run Linux based containers: <a href="https://docs.docker.com/docker-for-windows/"><strong>https://docs.docker.com/docker-for-windows/</strong></a></p><p>Once that has been installed, you should be able to open up a terminal and run <code>docker -v</code>, which will print out the version of Docker you just installed.</p><h2 id='step-1-running-your-first-docker-web-server'><a class='anchor' aria-hidden='true' href='#step-1-running-your-first-docker-web-server'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>Step 1: Running Your First Docker Web Server</h2><p>Let’s start by getting the base version of <a href="https://hub.docker.com/_/nginx"><strong>NGINX</strong></a> up and running. In a command line terminal, type the command:</p><p><code>docker container run --name nginx -p 8080:80 nginx:latest</code></p><p>This command will be running a few different tasks, which might take a minute to complete. Once you see “ready for start up” printed in the terminal, head over to a web browser and type the address “localhost:8080”</p>
 
       <figure class="">
   <img src="/assets/hello-world/dockerrun.png" class="img-fluid slb" alt="">
@@ -637,7 +637,7 @@
       <h2 id='step-2-creating-your-first-docker-image'><a class='anchor' aria-hidden='true' href='#step-2-creating-your-first-docker-image'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a><strong>Step 2: Creating your First Docker Image</strong></h2><p>Now that we used the <a href="https://hub.docker.com/_/nginx"><strong>NGINX Docker Image</strong></a> and confirmed it works, we can build a custom web server leveraging it.</p><p>Create an empty <a href="https://docs.docker.com/engine/reference/builder/"><strong>Dockerfile</strong></a> (no extension) and then add the following :</p><pre><code># use the nginx base image
 FROM nginx:latest
 # Download a static HTML page and install that as the index.html into our image at the nginx root directory of the server
-RUN curl <a href="https://reservable10.hamburg-main.tdg.mobiledgex.net:80/">https://reservable10.hamburg-main.tdg.mobiledgex.net:80/</a> &gt; /usr/share/nginx/html/index.html
+RUN curl <a href="https://reservable10.hamburg-main-tdg.eu.app.tdg.edgexr.org:80/">https://reservable10.hamburg-main-tdg.eu.app.tdg.edgexr.org:80/</a> &gt; /usr/share/nginx/html/index.html
 # expose Port 80 for nginx to serve our web page
 EXPOSE 80
 # optional: start command needed for all docker images to be run when starting a container. in this case, if not included, the nginx base image will call this command
@@ -649,7 +649,7 @@ CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</code></pre><p>
 </figure>
 
 
-      <h2 id='step-3-uploading-your-docker-image-to-mobiledgex'><a class='anchor' aria-hidden='true' href='#step-3-uploading-your-docker-image-to-mobiledgex'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a><strong>Step 3: Uploading Your Docker Image To MobiledgeX</strong></h2><p>For this, you will need an account and organization setup on MobiledgeX. If you do not have an account, head over to our <a href="https://dev-publish.mobiledgex.com/getting-started"><strong>Getting Started page</strong></a>. If you have not setup an organization, you can refer to this <a href="https://dev-publish.mobiledgex.com/deployments/accounts/org-users"><strong>guide on organizations</strong></a> for how to do so.</p><ol start="1"><li><p>Login to the MobiledgeX Docker repository using our account username and password. <strong>Replace with your MobiledgeX account username.</strong></p></li></ol><p><code>docker login -u &lt;your username&gt; docker.mobiledgex.net</code></p><ol start="2"><li><p>Tag your image for use on MobiledgeX. For the hello world image we just created, you can use the following. <strong>Make sure to replace </strong><code>&lt;your organization&gt;</code> with your actual organization name you created on MobiledgeX.</p></li></ol><p><code>docker tag helloworld:1.0 docker.mobiledgex.net/&lt;your organization&gt;/images/helloworld:1.0</code></p><p>More generically for any Docker image the command is:</p><p><code>docker tag &lt;your application&gt; docker.mobiledgex.net/&lt;your organization&gt;/images/&lt;application name&gt;:&lt;version&gt;</code></p><ol start="3"><li><p>Upload this newly tagged image to the MobiledgeX repository. <strong>Replace </strong><code>&lt;your organization&gt;</code> the MobiledgeX organization name.</p></li></ol><p><code>docker push docker.mobiledgex.net/&lt;your organization&gt;/images/helloworld:1.0</code></p><ol start="4"><li><p>Lastly, we recommend logging out.</p></li></ol><p><code>docker logout docker.mobiledgex.net</code></p><h2 id='where-to-go-from-here'><a class='anchor' aria-hidden='true' href='#where-to-go-from-here'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>Where to Go From Here</h2><p>Congratulations on uploading your first Docker Image to MobiledgeX! Next, we will look at how you can run this uploaded Docker Image as an Application Instance on the MobiledgeX Mobile Operator Edge.</p><ul><li><p><a href="https://dev-publish.mobiledgex.com/deployments/application-deployment-guides/hello-world/running-your-first-docker-image"><strong>Deploy Your Docker Image on MobiledgeX</strong></a></p></li></ul><p>If you are interested in deploying our Computer Vision Sample application, you can take a look at our Computer Vision Sample Apps guides.</p><ul><li><p><a href="https://dev-publish.mobiledgex.com/services/computer-vision/how-to-deploy-a-backend-application-to-mobiledgex"><strong>Deploying the MobiledgeX Computer Vision Sample Docker Image</strong></a></p></li></ul>
+      <h2 id='step-3-uploading-your-docker-image-to-mobiledgex'><a class='anchor' aria-hidden='true' href='#step-3-uploading-your-docker-image-to-mobiledgex'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a><strong>Step 3: Uploading Your Docker Image To EdgeXR</strong></h2><p>For this, you will need an account and organization setup on EdgeXR. If you do not have an account, head over to our <a href="https://developers.edgexr.org/getting-started"><strong>Getting Started page</strong></a>. If you have not setup an organization, you can refer to this <a href="https://developers.edgexr.org/deployments/accounts/org-users"><strong>guide on organizations</strong></a> for how to do so.</p><ol start="1"><li><p>Login to the EdgeXR Docker repository using our account username and password. <strong>Replace with your EdgeXR account username.</strong></p></li></ol><p><code>docker login -u &lt;your username&gt; docker.cloud.edgexr.org</code></p><ol start="2"><li><p>Tag your image for use on EdgeXR. For the hello world image we just created, you can use the following. <strong>Make sure to replace </strong><code>&lt;your organization&gt;</code> with your actual organization name you created on EdgeXR.</p></li></ol><p><code>docker tag helloworld:1.0 docker.cloud.edgexr.org/&lt;your organization&gt;/images/helloworld:1.0</code></p><p>More generically for any Docker image the command is:</p><p><code>docker tag &lt;your application&gt; docker.cloud.edgexr.org/&lt;your organization&gt;/images/&lt;application name&gt;:&lt;version&gt;</code></p><ol start="3"><li><p>Upload this newly tagged image to the EdgeXR repository. <strong>Replace </strong><code>&lt;your organization&gt;</code> the EdgeXR organization name.</p></li></ol><p><code>docker push docker.cloud.edgexr.org/&lt;your organization&gt;/images/helloworld:1.0</code></p><ol start="4"><li><p>Lastly, we recommend logging out.</p></li></ol><p><code>docker logout docker.cloud.edgexr.org</code></p><h2 id='where-to-go-from-here'><a class='anchor' aria-hidden='true' href='#where-to-go-from-here'><svg class='octicon octicon-link' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'><path fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'></path></svg></a>Where to Go From Here</h2><p>Congratulations on uploading your first Docker Image to EdgeXR! Next, we will look at how you can run this uploaded Docker Image as an Application Instance on the EdgeXR Mobile Operator Edge.</p><ul><li><p><a href="https://developers.edgexr.org/deployments/application-deployment-guides/hello-world/running-your-first-docker-image"><strong>Deploy Your Docker Image on EdgeXR</strong></a></p></li></ul><p>If you are interested in deploying our Computer Vision Sample application, you can take a look at our Computer Vision Sample Apps guides.</p><ul><li><p><a href="https://developers.edgexr.org/services/computer-vision/how-to-deploy-a-backend-application-to-mobiledgex"><strong>Deploying the EdgeXR Computer Vision Sample Docker Image</strong></a></p></li></ul>
 
   
 </div>
@@ -667,7 +667,7 @@ CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</code></pre><p>
     <div class="row">
       <div class="col-12">
         <a class="brand" href="/"></a>
-        <div class="text-center"><p>©2022 MobiledgeX, Inc. 333 W. San Carlos Street Ste. 600, San Jose, CA 95110  | <a href="https://www.mobiledgex.com/privacy-policy">Privacy Policy</a> | <a href="https://www.mobiledgex.com/terms-of-use">Terms of Use</a> | <a href="https://www.mobiledgex.com/contact">Contact</a></p>
+        <div class="text-center"><p> <a href="https://edgexr.net/privacy-policy/">Privacy Policy</a> | <a href="https://console.cloud.edgexr.org/#/terms-of-use">Terms of Use</a> | <a href="https://edgexr.net/contact">Contact</a></p>
 </div>
       </div>
     </div>

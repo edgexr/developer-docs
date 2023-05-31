@@ -2,8 +2,8 @@
 /t/dfba3d26 /deployments/application-deployment-guides/hello-world 301
 /t/d351a636 https://mobiledgex.github.io/edge-cloud-sdk-android/ 301
 /t/a82decc1 /apis 301
-/t/5e782d3b https://api.mobiledgex.net/swagger/mexdemo/edge-cloud-sdk-csharp/html/index.html 301
-/t/4cfab579 https://api.mobiledgex.net 301
+/t/5e782d3b https://api.edgexr.org/swagger/mexdemo/edge-cloud-sdk-csharp/html/index.html 301
+/t/4cfab579 https://api.edgexr.org 301
 /t/ecd472ea /design/testing-and-debugging/health-check 301
 /t/9782643f /release-notes 301
 /t/625988aa /services/unity-edgemultiplay/running-edge-multiplay 301
@@ -22,7 +22,7 @@
 /t/02ab3f9a /product/mobiledgex-sdk 301
 /t/d395e5b8 /deployments/monitoring-and-metrics 301
 /t/8c559dee /deployments/monitoring-and-metrics/monitoring-edge-events 301
-/t/180a71a2 https://api.mobiledgex.net/oper 301
+/t/180a71a2 https://api.edgexr.org/oper 301
 /t/6f83aa93 /release-notes/sdk 301
 /t/982cedb0 /sdks/unity-sdk/unity-sdk-sample 301
 /t/0444137c /deployments/application-deployment-guides/virtual-machine 301
@@ -88,7 +88,7 @@
 /t/d049c6c5 /sdks/ios-sdk/ios-sdk-download 301
 /t/05a90cc0 /sdks/ios-sdk/ios-sdk-sample 301
 /t/326ae321 /sdks/ios-sdk/ios-sdk-third-party-licenses 301
-/t/7fe6318a https://api.mobiledgex.net/mc 301
+/t/7fe6318a https://api.edgexr.org/mc 301
 /t/52a96ad4 /glossary-of-terms 301
 /t/7533a031 /deployments/application-deployment-guides/gpu 301
 /t/db8d59f7 /product/mobiledgex-community 301

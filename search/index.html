@@ -491,10 +491,10 @@
               <ul class="duik-sidebar__nav">
                 <li class="duik-sidebar__item"><a href="/apis" class="duik-sidebar__link">Overview</a></li>
                                   <li class="duik-sidebar__item">
-            <a href="https://api.edgexr.org" class="duik-sidebar__link">Device APIs</a>
+            <a href="https://device.api.edgexr.org" class="duik-sidebar__link">Device APIs</a>
           </li>
                                   <li class="duik-sidebar__item">
-            <a href="https://api.edgexr.org/mc" class="duik-sidebar__link">Edge Orchestration APIs</a>
+            <a href="https://api.edgexr.org" class="duik-sidebar__link">Edge Orchestration APIs</a>
           </li>
                                   <li class="duik-sidebar__item">
             <a href="https://mobiledgex.github.io/edge-cloud-sdk-unity" class="duik-sidebar__link">Unity SDK Manual</a>
@@ -672,17 +672,17 @@
     var theImage = '';
     if (item) {
       if (!item.seo) {
-        theImage = 'https://openxedge.net/assets/social/mobiledgex-2020.jpg';
+        theImage = 'https://edgexr.net/assets/social/mobiledgex-2020.jpg';
       } else {
         if (!item.seo.image) {
-          theImage = 'https://openxedge.net/assets/social/mobiledgex-2020.jpg';
+          theImage = 'https://edgexr.net/assets/social/mobiledgex-2020.jpg';
         } else {
           if (item.seo.image == '@seo:thumbnail') {
             theImage = item.thumbnail;
           } else if (item.seo.image == '@seo:page_icon') {
-            theImage = 'https://openxedge.net/assets/social/mobiledgex-2020.jpg';
+            theImage = 'https://edgexr.net/assets/social/mobiledgex-2020.jpg';
           } else {
-            theImage = 'https://openxedge.net/assets/social/' + item.seo.image;
+            theImage = 'https://edgexr.net/assets/social/' + item.seo.image;
             theImage = theImage.replace('/assets/social//assets/social/', '/assets/social/');
           }
         }
